@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="bomdia/src"/>
+	<classpathentry kind="src" path="calculomedia/src"/>
+	<classpathentry kind="src" path="caranga/src"/>
+	<classpathentry kind="src" path="Dados/src"/>
+	<classpathentry kind="src" path="Dados1/src"/>
+	<classpathentry kind="src" path="escola/src"/>
+	<classpathentry kind="src" path="futebol/src"/>
+	<classpathentry kind="src" path="luz/src"/>
+	<classpathentry kind="src" path="pessoa/src"/>
+	<classpathentry kind="src" path="telefone/src"/>
+	<classpathentry kind="src" path="testeswing/src"/>
+	<classpathentry kind="src" path="velocidade/src"/>
+	<classpathentry kind="output" path="Dados/bin"/>
+</classpath>
