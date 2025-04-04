@@ -4,21 +4,40 @@ import javax.swing.JOptionPane;
 public class TesteAnimal {
 
 	public static void main(String[] args) {
-		Animal animal0 = new Animal();
+		Animal animal1 = new Animal();
+		int opcao = 0;
 		
-		animal0.nascer();
-		animal0.nome = JOptionPane.showInputDialog("Digite o nome do animal:");
-		animal0.classe = JOptionPane.showInputDialog("Digite a classe do animal:");
-		animal0.familia = JOptionPane.showInputDialog("Digite a família que o animal pertence:");
-		animal0.idade = Integer.parseInt(JOptionPane.showInputDialog("Digite a idade do animal:"));
-		animal0.dormir();
-		animal0.VerificarEstado();
-		animal0.comer();
-		animal0.VerificarEstado();
-		animal0.correr();
-		animal0.VerificarEstado();
-		animal0.morrer();
-		animal0.VerificarEstado();
+		do {
+			opcao = Integer.parseInt(JOptionPane.showInputDialog(
+					"1 - Nascer \n"
+					+ "2 - Comer \n"
+					+ "3 - Correr \n"
+					+ "4 - Dormir \n"
+					+ "5 - Morrer \n\n"
+					+ "Escolha uma opção:"));
+			switch(opcao) {
+			case 1:
+				animal1.nascer();
+				break;
+			case 2:
+				animal1.comer();
+				break;
+			case 3:
+				animal1.correr();
+				break;
+			case 4:
+				animal1.dormir();
+				break;
+			case 5:
+				animal1.morrer();
+				break;
+				default:
+				break;
+			}
+			
+		} while(opcao <= 5);
+		
+
 	}
 
 }
