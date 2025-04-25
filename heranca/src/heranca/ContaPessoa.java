@@ -7,48 +7,55 @@ public class ContaPessoa extends Pessoa {
 	private int mesesAplicados;
 	private double resgate;
 	
-	public boolean getContaConjunta() {
-		return contaConjunta;
-	}
 	
-	public void setContaConjunta(boolean contaConjunta) {
-		
+	public void setcontaConjunta(boolean contaConjunta) {
 		this.contaConjunta = contaConjunta;
 	}
 	
-	public double getSaldo() {
-		return saldo;
+	private boolean getcontaConjunta() {
+		return contaConjunta;
 	}
 	
-	public void setSaldo(double saldo) {
-		
+	public void setsaldo(double saldo) {
 		this.saldo = saldo;		
 	}
 	
-	public int getMesesAplicados() {
-		return mesesAplicados;
+	public double getsaldo() {
+		return saldo;
 	}
 	
-	public void setMesesAplicados(int mesesAplicados) {
-		
+	public void setmesesAplicados(int mesesAplicados) {
 		this.mesesAplicados = mesesAplicados;
 	}
 	
-	public double getResgate() {
-		return resgate;
+	public int getmesesAplicados() {
+		return mesesAplicados;
 	}
 	
-	public void setResgate(double resgate) {
-		
-		this.resgate = resgate;
+	private void setresgate(double s, int d) {
+		resgate = s;
+		for (int x = 1; x <= d; x ++) {
+			resgate = resgate * 1.005;
+		}
+	}
+	
+	public double getresgate() {
+		return resgate;
 	}
 	
 	public void apresenta() {
 		super.apresenta();
-		System.out.println("A conta é conjunta? " + getContaConjunta());
-		System.out.println("Saldo: R$ " + getSaldo());
-		System.out.println("Meses aplicados: " + getMesesAplicados());
-		System.out.println("Resgate: R$ " + getResgate());
+		System.out.println("Tipo de conta: ");
+		if(getcontaConjunta() == true) {
+			System.out.println("Conjunta");
+		}
+		else {
+			System.out.println("Individual");
+		}
+		System.out.println("Saldo: R$ " + getsaldo());
+		System.out.println("Meses aplicados: " + getmesesAplicados());
+		setresgate(getsaldo(), getmesesAplicados());
+		System.out.println("Resgate previsto: R$ " + getresgate());
 	}
 
 }
