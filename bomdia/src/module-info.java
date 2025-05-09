@@ -4,5 +4,5 @@
 /**
  * 
  */
-module pessoa2 {
+module jogo {
 }
