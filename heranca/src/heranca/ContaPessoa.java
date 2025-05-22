@@ -55,7 +55,7 @@ public class ContaPessoa extends Pessoa {
 		System.out.println("Saldo: R$ " + getsaldo());
 		System.out.println("Meses aplicados: " + getmesesAplicados());
 		setresgate(getsaldo(), getmesesAplicados());
-		System.out.println("Resgate previsto: R$ " + getresgate());
+		System.out.printf("Resgate previsto: R$ %.2f " ,getresgate());
 	}
 
 }
