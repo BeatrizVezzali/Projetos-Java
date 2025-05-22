@@ -1,7 +1,7 @@
 package carrodeluxo;
 
 public class TesteCarro {
-
+	
 	public static void main(String[] args) {
 		Carro carro1 = new Carro();
 		
@@ -43,8 +43,6 @@ public class TesteCarro {
 		System.out.println("Modelo: " + carro3.modelo);
 		System.out.println("Aceleração: " + carro3.aceleracao + "km/h(s)");
 		System.out.println("Velocidade: " + carro3.velocidade + "km/h");
-		System.out.println("Consumo rodoviário: " + carro3.consumo_rodoviario + "km/h(l)");
-
+		System.out.println("Consumo rodoviário: " + carro3.consumo_rodoviario + "km/h(l)");	
 	}
-
 }

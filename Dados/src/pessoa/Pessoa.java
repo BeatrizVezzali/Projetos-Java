@@ -19,6 +19,7 @@ public class Pessoa {
 		System.out.println("Altura: " + altura + "m");
 		System.out.println("Número do sapato: " + sapato);
 		
+		entrada.close();
 	}
 
 }
