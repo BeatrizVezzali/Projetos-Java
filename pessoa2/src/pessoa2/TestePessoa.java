@@ -3,7 +3,6 @@ package pessoa2;
 public class TestePessoa {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Pessoa Pessoa1 = new Pessoa();
 		
 		Pessoa1.dados("Pedro", "12345", 5000);
