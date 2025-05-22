@@ -3,7 +3,6 @@ package dados;
 public class Dados {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		String nome = "José Pereira";
 		byte idade = 25;
@@ -29,6 +28,7 @@ public class Dados {
 		default:
 			System.out.println("Padre");
 		}
+		
 		System.out.println("Tipo de conta: ");
 		if(ctaConjunta == true) {
 			System.out.println("Conta Conjunta");
@@ -36,6 +36,7 @@ public class Dados {
 		else {
 			System.out.println("Conta Individual");
 		}
+		
 		System.out.println("Saldo conta: R$" + saldo);
 		System.out.println("Meses aplicados: " + mesesAplic);
 		double resgate = saldo;
